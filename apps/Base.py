@@ -1,7 +1,7 @@
 __author__ = 'prince'
 import cherrypy
 
-from lib.Renderer import *
+from Lib.Renderer import *
 
 class Base:
     def __init__(self):
@@ -10,6 +10,6 @@ class Base:
     @cherrypy.expose
     def index(self):
         print "\n\n\nBase"
-        rc = {'status' : 0, 'msg' : 'some random msg'}
+        rc = {'status' : 0, 'msg' : 'some random msg', 'page' : 'base.html'}
         return render(rc)
 

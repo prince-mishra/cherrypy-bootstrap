@@ -21,8 +21,8 @@ xmlns:py="http://genshi.edgewall.org/">
         <span class="icon-bar"></span>
       </a>
 
-      <a class="brand" href="/">inSync Automation</a>
-      <span class="tagline">a continuous integration setup</span>
+      <a class="brand" href="/">Druva Cloud</a>
+      <span class="tagline">Service Status</span>
     </div>
   </div>
 </div>
@@ -34,7 +34,7 @@ xmlns:py="http://genshi.edgewall.org/">
                 <nav>
                     <ul class="nav">
                       <li class="selected">
-                        <a href=""><i class="icon-play"></i> Builds</a>
+                        <a href=""><i class="icon-play"></i> Status</a>
                       </li>
                     </ul>
                 </nav>
@@ -42,6 +42,7 @@ xmlns:py="http://genshi.edgewall.org/">
         </div>
         <div class="span9" id="content-wrapper">
             <div id="content">
+              ${msg}
                 <!-- Navbar
                 ================================================== -->
                 <!--section id="stats">
